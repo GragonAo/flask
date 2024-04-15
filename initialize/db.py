@@ -1,6 +1,5 @@
 import logging
 import os
-import sys
 
 from dotenv import load_dotenv
 from playhouse.pool import PooledMySQLDatabase
@@ -22,7 +21,6 @@ def init_db():
         conn.connect()
     except Exception as e:
         logging.error(f"数据库连接失败,请检查.env内数据库配置选项是否正确!: {e}")
-        sys.exit(1)
 
 
 def close_db():
