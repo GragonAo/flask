@@ -1,0 +1,19 @@
+### 首页
+GET http://127.0.0.1:8080
+
+
+### 响应json
+GET http://127.0.0.1:8080/json
+
+
+### 响应数据库内字段
+GET http://127.0.0.1:8080/demo/userList
+
+
+### 添加一个用户
+POST http://127.0.0.1:8080/demo/addUser
+Content-Type: application/json
+
+{
+  "name": "Flask3"
+}
