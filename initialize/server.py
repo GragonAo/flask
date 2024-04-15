@@ -13,6 +13,7 @@ CORS(app)
 # 配置Debug模式
 app.debug = os.getenv('DEBUG', 'false').lower() == 'true'
 
+
 def RunServer():
     db.init_db()
     initServer()

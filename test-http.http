@@ -5,6 +5,8 @@ GET http://127.0.0.1:8080
 ### 响应json
 GET http://127.0.0.1:8080/json
 
+### 响应error
+GET http://127.0.0.1:8080/err?who=flask
 
 ### 响应数据库内字段
 GET http://127.0.0.1:8080/demo/userList

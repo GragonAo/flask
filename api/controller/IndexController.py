@@ -16,3 +16,9 @@ def json():
             1, 2, 3
         ]
     })
+
+
+@indexController.route('/err')
+def err():
+    err = 1 / 0
+    return "error"
