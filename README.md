@@ -1,6 +1,8 @@
 # 安装项目
-
 `pip install -r requirements.txt`
+
+# 运行项目
+`python start.py`
 
 # 配置基本环境
 .example.env
