@@ -1,5 +1,4 @@
 from flask import Blueprint
-
 from utils.R import R
 
 indexController = Blueprint("indexController", __name__)

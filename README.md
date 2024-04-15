@@ -2,6 +2,12 @@
 
 `pip install -r requirements.txt`
 
+# 配置基本环境
+
+.example.env
+删除 .example
+
+
 # 目录结构
 
 | 目录             | 说明                                                             |
