@@ -15,7 +15,7 @@ class R:
         return jsonify(response)
 
     @staticmethod
-    def error(self, msg="error", data=None):
+    def error(msg="error", data=None):
         response = {
             'code': R.ERROR,
             'msg': msg,
