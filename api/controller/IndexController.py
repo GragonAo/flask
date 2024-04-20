@@ -1,15 +1,15 @@
 from flask import Blueprint
 from utils.R import R
 
-indexController = Blueprint("indexController", __name__)
+app = Blueprint("indexController", __name__)
 
 
-@indexController.route('/')
+@app.route('/')
 def index():
     return "Hello Flask"
 
 
-@indexController.route('/json')
+@app.route('/json')
 def json():
     return R().success("请求成功", {
         "list": [
@@ -18,7 +18,7 @@ def json():
     })
 
 
-@indexController.route('/err')
+@app.route('/err')
 def err():
     err = 1 / 0
     return "error"
